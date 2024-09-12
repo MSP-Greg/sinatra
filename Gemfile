@@ -19,7 +19,7 @@ gem 'rackup'
 
 puma_version = ENV['puma'].to_s
 puma_version = nil if puma_version.empty? || (puma_version == 'stable')
-puma_version = { github: 'puma/puma' } if puma_version == 'head'
+puma_version = { github: 'MSP-Greg/puma', branch: '00-env-fixes-lib-ext-ci' } if puma_version == 'head'
 gem 'puma', puma_version
 
 gem 'minitest', '~> 5.0'
